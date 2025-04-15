@@ -58,7 +58,8 @@ public class NNNNqueen extends Thread {
             t[i] = new NNNNqueen(N, i);
             t[i].start();
         }
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++)
+        {
             t[i].join();
         }
         long end = System.currentTimeMillis();
